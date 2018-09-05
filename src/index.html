@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>replace stream</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <fieldset class="row A">
+      <legend>A</legend>
+      <div class="container">
+        <video id="A-local-video" class="row" autoplay></video>
+        <video id="B-remote-video" class="row" autoplay></video>
+      </div>
+      <select name="" id="A-device-list"><option></option></select>
+
+      <button id="A-call-btn">Call</button>
+      <button id="A-hang-up-btn" disabled>Hang up</button>
+      <button id="A-replace-stream" disabled>replace stream</button>
+    </fieldset>
+    <fieldset class="row remote">
+      <legend>B</legend>
+      <div class="container">
+        <video id="B-local-video" class="row" autoplay></video>
+        <video id="A-remote-video" class="row" autoplay></video>
+      </div>
+      <select name="" id="B-device-list"><option></option></select>
+
+      <button id="B-call-btn">Call</button>
+      <button id="B-hang-up-btn" disabled>Hang up</button>
+      <button id="B-replace-track" disabled>replace track</button>
+    </fieldset>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
